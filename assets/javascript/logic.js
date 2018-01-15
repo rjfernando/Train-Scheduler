@@ -1,5 +1,6 @@
 $(document).ready(function(){
-var config = {
+
+    var config = {
     apiKey: "AIzaSyAjrfsRFPPRhQemk3gN2ZRTFSqUA1QWtLI",
     authDomain: "train-scheduler-13856.firebaseapp.com",
     databaseURL: "https://train-scheduler-13856.firebaseio.com",
@@ -91,9 +92,9 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     
     // Add each train's data into the table
   
-$("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination  + 
-                                "</td><td>" + frequency + "</td><td>" + nextArrival + 
-                                "</td><td>" + minutesAway + "</td></tr>");
+    $("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + destination  + 
+                                    "</td><td>" + frequency + "</td><td>" + nextArrival + 
+                                    "</td><td>" + minutesAway + "</td></tr>");
 
 
 }, function(errorObject){

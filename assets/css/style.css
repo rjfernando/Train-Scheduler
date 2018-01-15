@@ -18,3 +18,10 @@ body {
 .panel-title {
     color: black;
 }
+
+h1 {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 9px;
+    text-shadow: 6px 6px gray;
+ }

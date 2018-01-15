@@ -6,51 +6,61 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!--css stylesheet-->
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+   
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
     <!-- Moment.js Reference -->
-    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+    <script src="http://momentjs.com/downloads/moment.js"></script>  
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
+    
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 <body>
     
     <div class="container">
-
-      <div class="jumbotron" style="background-color: black; color: grey">
-        <h1 class="text-center">Train Scheduler</h1>
-        <h3 class="text-center">Timing is Everything</h3>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
-                </div>
-                <div class="panel-body">
-                <table class="table table-hover" id='trainTable'>
-                    <thead>
-                        <tr>
-                            <th>Train Name</th>
-                            <th>Destination</th>
-                            <th>Frequency (min)</th>
-                            <th>Next Arrival</th>
-                            <th>Minutes Away</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                
-                    </tbody>
-                </table>
+        <div class ="col-md-2"></div>
+            <div class="col-lg-8">  
+                <h1 class="text-center" id = "header">Train Scheduler</h1>                
             </div>
+        <div class ="col-md-2"></div>
+    </div>
+        
+    <div class="row">
+         <div class ="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                    <table class="table table-hover" id='trainTable'>
+                        <thead>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency (min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                    
+                        </tbody>
+                    </table>
+                </div>
+            <div class ="col-lg-2"></div>
         </div>
 
-          <div class="panel panel-primary">
+          <div class="panel panel-danger">
             <div class="panel-heading">
               <h3 class="panel-title"><strong>Add Train</strong></h3>
             </div>

@@ -1,0 +1,20 @@
+body {
+    background: url("../images/train.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron {
+    background: lightgreen;
+}
+
+#header {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 150px;
+}
+
+.panel-title {
+    color: black;
+}
